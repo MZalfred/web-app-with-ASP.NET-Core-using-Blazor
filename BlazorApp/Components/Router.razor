@@ -1,3 +1,12 @@
+@page "/example"
+
+<router AppAssembly="@typeof(Program).Assembly">
+    <found Context="routeData">
+        <routeView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+        <focusOnNavigate RouteData="@routeData" Selector="h1" />
+    </found>
+</router>
+
 <p role="status">Current count: @currentCount</p>
 <p role="status">Current2: @(currentCount)</p>
 
@@ -5,6 +14,7 @@
 {
     <p>You win!</p>
 }
+
 <ul>
     @foreach (var item in items)
     {
@@ -12,27 +22,42 @@
     }
 </ul>
 
-<button class="btn btn-primary" @onclick="I
-IncrementCount">Click me</button>
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 <button class="btn btn-primary" @onclick="() => currentCount++">Click me</button>
 <input @onchange="InputChanged" />
 <p>@message</p>
-
-@code {
-    string message = "";
-
-    void InputChanged(ChangeEventArgs e)
-    {
-        message = (string)e.Value;
-    }
-}
 
 <input @bind="text" />
 <button @onclick="() => text = string.Empty">Clear</button>
 <p>@text</p>
 
-@code {
-    string text = "";
-}
+<counter @render-mode="ServerPrerendered" />
 
-<counter @rendermode="InteractiveServer" />
+@code {
+    private int currentCount = 0;
+    private string message = "";
+    private string text = "";
+    private List<Item> items = new List<Item>();
+
+    protected override Task OnInitializedAsync()
+    {
+        // Initialize your items or any other startup logic here
+        return base.OnInitializedAsync();
+    }
+
+    void IncrementCount()
+    {
+        currentCount++;
+    }
+
+    void InputChanged(ChangeEventArgs e)
+    {
+        message = e.Value.ToString();
+    }
+
+    public class Item
+    {
+        public string Name { get; set; }
+        // Other properties of your item
+    }
+}
