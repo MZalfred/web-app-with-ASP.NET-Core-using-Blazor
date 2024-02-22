@@ -34,6 +34,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/alfredkafurama/Library/Mobile Documents/com~apple~CloudDocs/web-app-with-ASP.NET-Core-using-Blazor/BlazorApp/Components/Pages/PageTitle.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9QYWdlVGl0bGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alfredkafurama/Library/Mobile Documents/com~apple~CloudDocs/web-app-with-ASP.NET-Core-using-Blazor/BlazorApp/Components/Pages/Title.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9UaXRsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/alfredkafurama/Library/Mobile Documents/com~apple~CloudDocs/web-app-with-ASP.NET-Core-using-Blazor/BlazorApp/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9XZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
