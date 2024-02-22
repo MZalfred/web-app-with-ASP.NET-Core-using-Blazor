@@ -22,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/alfredkafurama/Library/Mobile Documents/com~apple~CloudDocs/web-app-with-ASP.NET-Core-using-Blazor/BlazorApp/Components/Layout/NavLink.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTmF2TGluay5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/alfredkafurama/Library/Mobile Documents/com~apple~CloudDocs/web-app-with-ASP.NET-Core-using-Blazor/BlazorApp/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Db3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
