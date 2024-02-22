@@ -8,7 +8,8 @@
       {
         "ignore": [
           "-webkit-text-size-adjust",
-          "-webkit-overflow-scrolling"
+          "-webkit-overflow-scrolling",
+          "-webkit-appearance"
         ]
       }
     ],
